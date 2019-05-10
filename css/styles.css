@@ -44,7 +44,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   color: #aaa;
   font-size: 8pt;
   letter-spacing: 1px;
-  padding: 25px;
+  padding: 25px 0px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -198,7 +198,7 @@ nav h1 a {
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 89%;
   position: fixed;
   right: 0;
   top: 80px;
@@ -211,7 +211,7 @@ nav h1 a {
 }
 .inside #footer {
   bottom: 0;
-  position: absolute;
+  position: relative;
   width: 50%;
 }
 #restaurant-name {
@@ -241,16 +241,23 @@ nav h1 a {
   padding: 2px 0;
   text-align: center;
   text-transform: uppercase;
-	width: 90%;
+  width: 90%;
 }
+
+#restaurant-and-reviews-container {
+  width: 50%;
+}
+
 #restaurant-container, #reviews-container {
   border-bottom: 1px solid #d9d9d9;
   border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
+  width: 100%;
+  margin-left: 5%;
+
 }
+
 #reviews-container {
-  padding: 30px 40px 80px;
+  margin-right: 5%;
 }
 #reviews-container h2 {
   color: #f58500;
@@ -270,9 +277,9 @@ nav h1 a {
   list-style-type: none;
   margin: 0 0 30px;
   overflow: hidden;
-  padding: 0 20px 20px;
   position: relative;
-  width: 85%;
+  width: 90%;
+  padding: 3% 1%;
 }
 #reviews-list li p {
   margin: 0 0 10px;
@@ -285,10 +292,6 @@ nav h1 a {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  
-  #restaurants-list li {
-    max-width: 100%;
-  }
 
 } 
 
@@ -309,5 +312,15 @@ nav h1 a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
+  #restaurant-and-reviews-container {
+    width: 50%;
+  }
+
+  #map-container{
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
 
 }
