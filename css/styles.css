@@ -10,7 +10,8 @@ body,td,th,p{
 body {
 	background-color: #fdfdfd;
 	margin: 0;
-	position:relative;
+  position:relative;
+  overflow-x: hidden;
 }
 ul, li {
 	font-family: Arial, Helvetica, sans-serif;
@@ -138,7 +139,7 @@ nav h1 a {
   background-color: #f3f3f3;
   list-style: outside none none;
   margin: 0;
-  padding: 30px 15px 60px;
+  padding: 30px 0px 60px;
   text-align: center;
   display: flex;
   flex-direction: row;
