@@ -287,6 +287,13 @@ nav h1 a {
   color: #666;
 }
 
+/* ====================== Hiding Labels ====================== */
+#map-aria-description, #neighborhoods-label, #cuisines-label{
+  display: none
+}
+
+
+
 /* ====================== Responsive Media Queries ====================== */
 
 /* Extra small devices (phones, 480 and down) */
@@ -322,11 +329,6 @@ nav h1 a {
   #reviews-list li {
     position: inherit;
   }
-
-} 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
 
 } 
 
@@ -389,10 +391,3 @@ nav h1 a {
   }
 } 
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  #restaurant-and-reviews-container {
-    width: 50%;
-  }
-
-}
