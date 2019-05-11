@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -20,9 +20,9 @@
       <h1><a href="/">Restaurant Reviews</a></h1>
     </nav>
     <!-- Beginning breadcrumb -->
-    <ul id="breadcrumb" >
-      <li><a href="/">Home</a></li>
-    </ul>
+      <ul id="breadcrumb" >
+        <li><a href="/">Home</a></li>
+      </ul>
     <!-- End breadcrumb -->
     <!-- End nav -->
   </header>
@@ -31,11 +31,12 @@
   <!-- Beginning main -->
   <main id="maincontent">
     <!-- Beginning map -->
-    <section id="map-container">
+    <section id="map-container" role="application" aria-labelledby="map-aria-description">
       <div id="map"></div>
     </section>
+    <label id="map-aria-description">Mapbox map application</label>
     <!-- End map -->
-    <section id="restaurant-and-reviews-container">
+    <section id="restaurant-and-reviews-container" aria-labelledby="restaurant-name">
       <!-- Beginning restaurant -->
       <section id="restaurant-container">
         <h1 id="restaurant-name"></h1>
@@ -46,8 +47,8 @@
       </section>
       <!-- end restaurant -->
       <!-- Beginning reviews -->
-      <section id="reviews-container">
-        <ul id="reviews-list"></ul>
+      <section id="reviews-container" aria-label="reviews">
+        <ul id="reviews-list" aria-label="reviews-list"></ul>
       </section>
       <!-- End reviews -->
     </section>
